@@ -16,11 +16,14 @@
     .firsthead{
         
         text-align: center;
-        font-size: large;
         padding-bottom: 3%;
         padding-top: 4%;
         animation: fadeIn 10s;
         
+    }
+    .firsthead h1{
+        font-family:monospace;
+        font-size: 40px;
     }
 
     .container{
@@ -32,7 +35,7 @@
         
     }
     .container .part1{
-        font-family: 'Times New Roman', Times, serif;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         width:60%;
         flex:40%;
         text-align: left;
@@ -59,7 +62,7 @@
         padding: 0.1%;
         border-style:inset;
         height: auto;
-        animation: fadeIn 15s;
+        animation: fadeIn 6s;
     }
     
     
@@ -157,7 +160,7 @@ transition: all 4s ease-in-out;
     color: rgb(0, 0, 0);
     font-size: 18px;
     border:none;
-    margin-bottom: 16px;
+    margin-bottom: 30px;
     border-bottom: 1px solid gray;
     background: transparent;
 }
@@ -167,7 +170,7 @@ transition: all 4s ease-in-out;
     color: rgb(0, 0, 0);
     font-size: 18px;
     border:none;
-    margin-bottom: 16px;
+    margin-bottom: 30px;
     border-bottom: 1px solid gray;
     background: transparent;
 }
