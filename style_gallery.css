@@ -80,13 +80,14 @@ body{
     display: table;
     clear: both;
   }
-  
+  .row{
+    padding-left: 5%;
+  }
   /* Six columns side by side */
   .column {
     
     float: left;
     width: 20%;
-    padding: 1%;
     margin-bottom: 1%;
   }
 
