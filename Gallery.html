@@ -3,12 +3,11 @@
     <title>Gallery</title>
     <script language="JavaScript">
     
-    
+    var uid;
     var password;
-    var pass1="xc5ytt7";
-    
-    password=prompt('Please enter your password to view this page!',' ');
-    
+    uid=password=prompt('Username:',' ');
+    password=prompt('Password:',' ');
+    pass1=uid[0]+"2022"
     if (password==pass1)
       alert('Password Correct! Click OK to enter!');
     else
@@ -52,43 +51,75 @@ function showSlides(n) {
     
 </HEAD>
 <body>
-  <h1 style="text-align:center;"><i>DURGA PUJA 2022</i></h1>
+  <h1 style="text-align:center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><i>DURGA PUJA 2022</i></h1>
     <!-- Container for the image gallery -->
 <div class="container">
 
     <!-- Full-width images with number text -->
     <div class="mySlides">
-      <div class="numbertext">1 / 6</div>
-        <img src="pics/IMG_9010.JPG" style="width:50%">
+      <div class="numbertext">1 / 15</div>
+        <img src="pics/Jodh.JPG" style="width:50%">
     </div>
   
     <div class="mySlides">
-      <div class="numbertext">2 / 6</div>
-        <img src="pics/IMG_9011.JPG" style="width:50%">
+      <div class="numbertext">2 / 15</div>
+        <img src="pics/Salim.JPG" style="width:50%">
     </div>
   
     <div class="mySlides">
-      <div class="numbertext">3 / 6</div>
+      <div class="numbertext">3 / 15</div>
         <img src="pics/IMG_9025.JPG" style="width:50%">
     </div>
   
     <div class="mySlides">
-      <div class="numbertext">4 / 6</div>
+      <div class="numbertext">4 / 15</div>
         <img src="pics/IMG_9234.JPG" style="width:50%">
     </div>
   
     <div class="mySlides">
-      <div class="numbertext">5 / 6</div>
+      <div class="numbertext">5 / 15</div>
         <img src="pics/IMG_9236.JPG" style="width:50%">
     </div>
   
     <div class="mySlides">
-      <div class="numbertext">6 / 6</div>
+      <div class="numbertext">6 / 15</div>
         <img src="pics/IMG_9238.JPG" style="width:50%">
     </div>
     <div class="mySlides">
-      <div class="numbertext">7 / 7</div>
-        <img src="pics/IMG_0893.JPG" style="width:50%">
+      <div class="numbertext">7 / 15</div>
+        <img src="pics/Ballygunge.JPG" style="width:50%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">8 / 15</div>
+        <img src="pics/BL.JPG" style="width:50%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">9 / 15</div>
+        <img src="pics/BJ.JPG" style="width:50%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">10 / 15</div>
+        <img src="pics/AK.JPG" style="width:50%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">11 / 15</div>
+        <img src="pics/AE.JPG" style="width:50%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">12 / 15</div>
+        <img src="pics/FD.JPG" style="width:50%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">13 / 15</div>
+        <img src="pics/DL.JPG" style="width:50%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">14 / 15</div>
+        <img src="pics/Sree.JPG" style="width:50%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">15 / 15</div>
+        <img src="pics/Newtown.JPG" style="width:50%">
     </div>
   
     <!-- Next and previous buttons -->
@@ -103,25 +134,49 @@ function showSlides(n) {
     <!-- Thumbnail images -->
     <div class="row">
       <div class="column">
-        <img class="demo cursor" src="pics/IMG_9010.JPG" style="width:50%" onclick="currentSlide(1)" alt="Jodhpur Park">
+        <img class="demo cursor" src="pics/Jodh.JPG" style="width:50%" onclick="currentSlide(1)" alt="Jodhpur Park">
       </div>
       <div class="column">
-        <img class="demo cursor" src="pics/IMG_9011.JPG" style="width:50%" onclick="currentSlide(2)" alt="">
+        <img class="demo cursor" src="pics/Salim.JPG" style="width:50%" onclick="currentSlide(2)" alt="Salimpur Pally">
       </div>
       <div class="column">
-        <img class="demo cursor" src="pics/IMG_9025.JPG" style="width:50%" onclick="currentSlide(3)" alt="">
+        <img class="demo cursor" src="pics/IMG_9025.JPG" style="width:50%" onclick="currentSlide(3)" alt="Babubagan Sharbojanin">
       </div>
       <div class="column">
-        <img class="demo cursor" src="pics/IMG_9234.JPG" style="width:50%" onclick="currentSlide(4)" alt="">
+        <img class="demo cursor" src="pics/IMG_9234.JPG" style="width:50%" onclick="currentSlide(4)" alt="95 Pally">
       </div>
       <div class="column">
-        <img class="demo cursor" src="pics/IMG_9236.JPG" style="width:50%" onclick="currentSlide(5)" alt="">
+        <img class="demo cursor" src="pics/IMG_9236.JPG" style="width:50%" onclick="currentSlide(5)" alt="Mudiali">
       </div>
       <div class="column">
-        <img class="demo cursor" src="pics/IMG_9238.JPG" style="width:50%" onclick="currentSlide(6)" alt="">
+        <img class="demo cursor" src="pics/IMG_9238.JPG" style="width:50%" onclick="currentSlide(6)" alt="Shiv Mandir">
       </div>
       <div class="column">
-        <img class="demo cursor" src="pics/IMG_0893.JPG" style="width:50%" onclick="currentSlide(6)" alt="">
+        <img class="demo cursor" src="pics/Ballygunge.JPG" style="width:50%" onclick="currentSlide(7)" alt="Ballyunge Cultural">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="pics/BL.JPG" style="width:50%" onclick="currentSlide(8)" alt="BL Block- Saltlake">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="pics/BJ.JPG" style="width:50%" onclick="currentSlide(9)" alt="BJ Block- Saltlake">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="pics/AK.JPG" style="width:50%" onclick="currentSlide(10)" alt="AK Block- Saltlake">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="pics/AE.JPG" style="width:50%" onclick="currentSlide(11)" alt="AE Block- Saltlake">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="pics/FD.JPG" style="width:50%" onclick="currentSlide(12)" alt="FD Block- Saltlake">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="pics/DL.JPG" style="width:50%" onclick="currentSlide(13)" alt="DL Block- Saltlake">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="pics/Sree.JPG" style="width:50%" onclick="currentSlide(14)" alt="Sreebhumi">
+      </div>
+      <div class="column">
+          <img class="demo cursor" src="pics/Newtown.JPG" style="width:50%" onclick="currentSlide(15)" alt="Newtown">
       </div>
     </div>
 </div>
