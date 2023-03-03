@@ -5,10 +5,12 @@
     
     var uid;
     var password;
-    uid=password=prompt('Username:',' ');
-    password=prompt('Password:',' ');
-    pass1=uid[0]+"2022"
-    if (password==pass1)
+    uid = prompt("Username:",'');
+    if(uid==null)
+    window.location="index.html"
+    password = prompt("Password:",'');
+    pass1=uid[0]+"2023"
+    if ((uid!=null || password!=null) && password==pass1)
       alert('Password Correct! Click OK to enter!');
     else
        {
