@@ -1,21 +1,151 @@
 * {
     box-sizing: border-box;
-  }
-body{
-    background-color: rgb(209, 209, 209);
 }
-.mainbody{
-        
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(209, 209, 209);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+[data-theme="dark"] {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+[data-theme="dark"] .mainbody {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.mainbody {
     padding: 10%;
-    padding-left:5%;
-    border-style:none;
-    margin-left: 15%;
-    margin-right:15%;
-    padding-top:2%;
+    padding-left: 5%;
+    border-style: none;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 2%;
     background-color: rgb(255, 255, 255);
     animation: fadeIn 2s;
-    }
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
 
-.line{
-   margin:0%;
+[data-theme="dark"] h2 {
+    color: #e0e0e0;
+}
+
+[data-theme="dark"] h3 {
+    color: #e0e0e0;
+}
+
+hr {
+    margin: 2px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+
+ul ul {
+    list-style-type: circle;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+li strong {
+    font-weight: bold;
+}
+
+.date {
+    float: right;
+    font-weight: normal;
+    font-size: 14px;
+    color: #555;
+}
+
+[data-theme="dark"] .date {
+    color: #bbb;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.title {
+    font-weight: bold;
+    color: #007bff;
+}
+
+[data-theme="dark"] .title {
+    color: #4a90e2;
+}
+
+.theme-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.theme-button:hover {
+    background-color: #0056b3;
+}
+.theme-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.theme-button:hover {
+    background-color: #0056b3;
+}
+
+h3 {
+    position: relative;
+    font-size: 18px;
+    color: #333;
+    margin-top: 50px;
+}
+
+/* h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 4px;
+    height: 10px;
+    background-color: #007bff;
+    display: block;
+} */
+
+h3 + ul {
+    border-left: 4px solid #007bff;
+    padding-left: 20px;
+    margin-bottom: 20px;
 }

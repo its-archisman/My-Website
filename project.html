@@ -1,68 +1,176 @@
 <html>
-    <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7E5LN4X1M4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7E5LN4X1M4');
-</script>
-        <title>Projects</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="style_project.css" rel="stylesheet">
-        <link rel="icon" href="final.png">
-
-    </head>
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7E5LN4X1M4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-7E5LN4X1M4');
+    </script>
+    <title>Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style_project.css" rel="stylesheet">
+    <script src="project.js"></script>
+    <link rel="icon" href="final.png">
+</head>
 <body>
+    <button class="theme-button" onclick="toggleTheme()">Toggle Theme</button>
     <div class="mainbody">
-    <a name="1"></a>
-    <h1 style="float: center;text-align: center;">Projects:</h1>
-    <div class="listofpro">
-        <h3>Programming-</h3>
-        <hr>
+        <h1>Projects</h1>
+        <h3>Algorithms</h3>
         <ul>
-        <li><b>Modelled one dimensional collisions of a system of particles using Binary Heap:</b> 
-            Given a system of particles (in 1D) with different 
-            masses, initial speeds, and positions, I calculated the details of the 
-            collisions (such as position, particle type, and time of occurrence) 
-            that would occur until a given time or until a specified number of 
-            collisions were reached. 
-        </li>
-        <li>
-           <b>Emulated Google Map's “Search Nearby” feature:</b> Implemented it in 
-                the most efficient way possible by using “Range Trees” and 
-                minimizing the time complexity.
-        </li>
-        <li>
-            <b>Created a database of employees in a company using Binary Trees: </b>The algorithm could fetch data much faster than brute-force 
-            methods.
-        </li>
-        <li>
-            <b>Pattern matching using modified Rabin-Karp Algorithm: </b>
-                Modified the traditional Rabin-Karp algorithm by introducing an error factor which will take care of the number of false positives that are reported.
-                Also calculated a suitable range which the offset can take in order to preserve the correctness of the algorithm. 
+            <li>
+                <div class="clearfix">
+                    <span class="title">Search Nearby Restaurants :</span> Prof. Ashish Chiplunkar
+                    <span class="date">[September 2022]</span>
+                </div>
+                <hr>
+                <ul>
+                    <li>Support queries asking for restaurant listings within a given area around a given point efciently by using Range Trees</li>
+                    <li>The preprocessing time is loglinear, while query address time is linear and logarithmic-squared, to the number of points</li>
+                </ul>
+            </li>
+            <li>
+                <div class="clearfix">
+                    <span class="title">Integer Linear Programming with Gomory Cuts :</span> Prof. Minati De
+                    <span class="date">[April 2023]</span>
+                </div>
+                <hr>
+                <ul>
+                    <li>Attained the optimal integral solution for feasible integer linear programming problems using the Gomory Cut Algorithm</li>
+                    <li>Started with the Two-Phase Simplex method, whose first part involved adding and driving out of artificial variables</li>
+                    <li>Then used the Simplex method to get the initial BFS; cuts were introduced thereafter along with the Dual-Simplex method</li>
+                </ul>
+            </li>
+            <li>
+                <div class="clearfix">
+                    <span class="title">One-dimensional Collision Modelling :</span> Prof. Ashish Chiplunkar
+                    <span class="date">[September 2022]</span>
+                </div>
+                <hr>
+                <ul>
+                    <li>Computed details of the collisions that would occur until a given time or until a specified number of collisions take place</li>
+                    <li>Implemented with Binary Heap; runtime is linear with respect to balls and loglinear with respect to balls and collisions</li>
+                </ul>
+            </li>
+            <li>
+                <div class="clearfix">
+                    <span class="title">Maximum Transmission Unit of an Ethernet Network :</span> Prof. Ashish Chiplunkar
+                    <span class="date">[October 2022]</span>
+                </div>
+                <hr>
+                <ul>
+                    <li>Computed the maximum achievable bandwidth that could be transferred between two given routers within a network</li>
+                    <li>Modified the Dijkstra's algorithm; loglinear runtime with respect to number of routers, surpassing brute force methods</li>
+                </ul>
+            </li>
+            <li>
+                <div class="clearfix">
+                    <span class="title">Pattern Matching using Modified Rabin-Karp Algorithm :</span> Prof. Naveen Garg
+                    <span class="date">[Date]</span>
+                </div>
+                <hr>
+                <ul>
+                    <li>Modified the traditional Rabin-Karp algorithm by introducing an error factor which will take care of the number of false positives that are reported</li>
+                    <li>Also calculated a suitable range which the offset can take in order to preserve the correctness of the algorithm</li>
+                </ul>
+            </li>
+        </ul>
+        <h3>Machine Learning</h3>
+        <ul>
+            <li>
+                <div class="clearfix">
+                    <span class="title">Image-to-LaTeX Formula Translation Using Encoder-Decoder Architecture :</span> Prof. Parag Singla
+                    <span class="date">[November 2023]</span>
+                </div>
+                <hr>
+                <ul>
+                    <li>Developed an Encoder-Decoder model to translate images of mathematical expressions into LaTeX code, utilizing CNN as encoder and RNN as decoder, along with an LSTM layer</li>
+                    <li>Implemented a CNN-based encoder with multiple convolutional and pooling layers to extract context vectors from resized and normalized images</li>
+                    <li>Trained the model on a synthetic dataset and fine-tuned it on a handwritten dataset, reporting BLEU scores on validation and test sets to measure accuracy</li>
+                    <li>Used teacher forcing for effective LSTM training, incorporating learnable embeddings and padding for handling variable-length output sequences</li>
+                </ul>
+            </li>
+            <li>
+                <div class="clearfix">
+                    <span class="title">Multi-Class Object Counting in Images Using Neural Networks :</span> Prof. Parag Singla
+                    <span class="date">[October 2023]</span>
+                </div>
+                <hr>
+                <ul>
+                    <li>Implemented a neural network from scratch for multi-class classification to predict the number of objects in an image using backpropagation and mini-batch Stochastic Gradient Descent</li>
+                    <li>Conducted experiments by varying hidden layer sizes and network depth, and analyzed performance metrics like precision, recall, and F1-score</li>
+                    <li>Tested the impact of using ReLU activation functions compared to sigmoid, and experimented with adaptive learning rates for improved training efficiency</li>
+                    <li>Used scikit-learn's MLPClassifier for comparison, replicating the custom neural network architecture and evaluating the differences in performance and training time</li>
+                </ul>
+            </li>
+            <li>
+                <div class="clearfix">
+                    <span class="title">Binary and Multi-Class Image Classification Using SVM :</span> Prof. Parag Singla
+                    <span class="date">[September 2023]</span>
+                </div>
+                <hr>
+                <ul>
+                    <li>Built a binary image classifier using Support Vector Machines (SVM) with both linear and Gaussian kernels, utilizing the CVXOPT package for optimization and scikit-learn for comparison</li>
+                    <li>Preprocessed images by resizing, normalizing, and flattening them to vectors, and analyzed the impact of support vectors on classification accuracy</li>
+                    <li>Developed a multi-class SVM classifier using one-vs-one strategy and Gaussian kernel, implemented with CVXOPT and scikit-learn, and evaluated performance on validation data</li>
+                    <li>Conducted hyperparameter tuning with 5-fold cross-validation for optimal SVM parameters, comparing cross-validation accuracy with validation set accuracy</li>
+                </ul>
+            </li>
+            <li>
+                <div class="clearfix">
+                    <span class="title">Sentiment Analysis of Coronavirus Tweets :</span> Prof. Parag Singla
+                    <span class="date">[September 2023]</span>
+                </div>
+                <hr>
+                <ul>
+                    <li>Implemented a Naïve Bayes classifier from scratch to categorize tweets into positive, neutral, or negative sentiments, achieving high accuracy on both training and validation sets</li>
+                    <li>Enhanced model performance by applying feature engineering techniques, including stopword removal, stemming, and bi-grams</li>
+                    <li>Visualized key words using word clouds for each sentiment category, highlighting the most frequent terms</li>
+                    <li>Conducted domain adaptation analysis by combining coronavirus tweets with general-purpose tweets, evaluating the impact on classification accuracy across different dataset sizes</li>
+                </ul>
+            </li>
+            <li>
+                <div class="clearfix">
+                    <span class="title">Creator-Assisted Contextual Ranking :</span> Prof. Weijie Su, University of Pennsylvania
+                    <span class="date">[June 2023 - August 2023]</span>
+                </div>
+                <hr>
+                <ul>
+                    <li>Using correlation data from PSBs and CSS, aim to shortlist some optimal options (arms); then compute user's ranking</li>
+                    <li>Seeking to achieve a ranking which would be a balance between the above ranking, and that submitted by the creator</li>
+                    <li>Utilizing contextual information of past students; PSBs which enable correlation analysis, store the results in a matrix</li>
+                </ul>
+            </li>
+        </ul>
 
-        </li>
-        <li>
-            <b>Sudoku Solver: </b>Solved sudoku efficiently using recursive methods.
-        </li>
-        <li>
-            <b>Created a database of employees in a company using Binary Trees: </b>The algorithm could fetch data much faster than brute-force methods.
-        </li>
-    </ul>
-    <br>
-    <h3>Stack Development-</h3>
-    <hr class="line">
-    <ul>
-        <li>Designed my personal website: <a href="https://its-archisman.github.io/My-Website/">Click here</a></li>
-        <li>Responsive onscreen Calculator designed using HTML, CSS, JavaScript: <a href="https://its-archisman.github.io/Calculator/">Click here</a></li>
-        <li>Solved Captcha on <a href="https://moodle.iitd.ac.in/">Moodle</a> using JavaScript and creating browser extensions</li>
-    </ul>
+        <h3>Web Development</h3>
+        <ul>
+            <li>
+                <div class="clearfix">
+                    <span class="title">Interactive Personal Webpage :</span> Personal Project
+                    <span class="date">[August 2022]</span>
+                </div>
+                <hr>
+                <ul>
+                    <li>Employed frontend development to design an appealing UI of the website which showcases my interests, projects, skills</li>
+                    <li>Includes a JavaScript-based password-secured Private Gallery and a Contact Me section for direct communication</li>
+                    <li>Designed an interactive footer, incorporating FontAwesome icons and ensuring adaptability to different screen sizes</li>
+                </ul>
+            </li>
+            <li>
+                <div class="clearfix">
+                    <span class="title">Responsive Onscreen Calculator :</span> Personal Project
+                    <span class="date">[July 2022]</span>
+                </div>
+                <hr>
+                <ul>
+                    <li>Interactive UI created with HTML, CSS, JavaScript; supports all basic operations and ensures precision up to 16 digits</li>
+                    <li>Implemented decimal numbers and error handling for division by zero; incorporated the Delete and All Clear buttons</li>
+                </ul>
+            </li>
+        </ul>
     </div>
-    </div>
-
 </body>
 </html>
