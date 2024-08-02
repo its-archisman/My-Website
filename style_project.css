@@ -133,19 +133,23 @@ h3 {
     margin-top: 50px;
 }
 
-/* h3::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 4px;
-    height: 10px;
-    background-color: #007bff;
-    display: block;
-} */
-
-h3 + ul {
+.section-ul {
     border-left: 4px solid #007bff;
     padding-left: 20px;
     margin-bottom: 20px;
+}
+
+h3.collapsible {
+    cursor: pointer;
+}
+
+.collapsible::after {
+    content: '\25BC';
+    font-size: 16px;
+    transition: transform 1s;
+}
+
+.collapsible.active::after {
+    content: '▶';
+    transform: rotate(90deg);
 }

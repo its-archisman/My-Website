@@ -11,26 +11,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="style_project.css" rel="stylesheet">
-    <script src="project.js"></script>
     <link rel="icon" href="final.png">
 </head>
 <body>
     <button class="theme-button" onclick="toggleTheme()">Toggle Theme</button>
     <div class="mainbody">
         <h1>Projects</h1>
-        <h3>Algorithms</h3>
-        <ul>
-            <li>
-                <div class="clearfix">
-                    <span class="title">Search Nearby Restaurants :</span> Prof. Ashish Chiplunkar
-                    <span class="date">[September 2022]</span>
-                </div>
-                <hr>
-                <ul>
-                    <li>Support queries asking for restaurant listings within a given area around a given point efciently by using Range Trees</li>
-                    <li>The preprocessing time is loglinear, while query address time is linear and logarithmic-squared, to the number of points</li>
-                </ul>
-            </li>
+        <h3 class="collapsible">Algorithms </h3>
+        <div class="content">
+        <ul class="section-ul">
             <li>
                 <div class="clearfix">
                     <span class="title">Integer Linear Programming with Gomory Cuts :</span> Prof. Minati De
@@ -45,19 +34,8 @@
             </li>
             <li>
                 <div class="clearfix">
-                    <span class="title">One-dimensional Collision Modelling :</span> Prof. Ashish Chiplunkar
-                    <span class="date">[September 2022]</span>
-                </div>
-                <hr>
-                <ul>
-                    <li>Computed details of the collisions that would occur until a given time or until a specified number of collisions take place</li>
-                    <li>Implemented with Binary Heap; runtime is linear with respect to balls and loglinear with respect to balls and collisions</li>
-                </ul>
-            </li>
-            <li>
-                <div class="clearfix">
                     <span class="title">Maximum Transmission Unit of an Ethernet Network :</span> Prof. Ashish Chiplunkar
-                    <span class="date">[October 2022]</span>
+                    <span class="date">[November 2022]</span>
                 </div>
                 <hr>
                 <ul>
@@ -67,8 +45,30 @@
             </li>
             <li>
                 <div class="clearfix">
+                    <span class="title">One-dimensional Collision Modelling :</span> Prof. Ashish Chiplunkar
+                    <span class="date">[October 2022]</span>
+                </div>
+                <hr>
+                <ul>
+                    <li>Computed details of the collisions that would occur until a given time or until a specified number of collisions take place</li>
+                    <li>Implemented with Binary Heap; runtime is linear with respect to balls and loglinear with respect to balls and collisions</li>
+                </ul>
+            </li>
+            <li>
+                <div class="clearfix">
+                    <span class="title">Search Nearby Restaurants :</span> Prof. Ashish Chiplunkar
+                    <span class="date">[September 2022]</span>
+                </div>
+                <hr>
+                <ul>
+                    <li>Support queries asking for restaurant listings within a given area around a given point efciently by using Range Trees</li>
+                    <li>The preprocessing time is loglinear, while query address time is linear and logarithmic-squared, to the number of points</li>
+                </ul>
+            </li>
+            <li>
+                <div class="clearfix">
                     <span class="title">Pattern Matching using Modified Rabin-Karp Algorithm :</span> Prof. Naveen Garg
-                    <span class="date">[Date]</span>
+                    <span class="date">[August 2022]</span>
                 </div>
                 <hr>
                 <ul>
@@ -77,8 +77,10 @@
                 </ul>
             </li>
         </ul>
-        <h3>Machine Learning</h3>
-        <ul>
+        </div>
+        <h3 class="collapsible">Machine Learning </h3>
+        <div class="content">
+        <ul class="section-ul">
             <li>
                 <div class="clearfix">
                     <span class="title">Image-to-LaTeX Formula Translation Using Encoder-Decoder Architecture :</span> Prof. Parag Singla
@@ -144,9 +146,11 @@
                 </ul>
             </li>
         </ul>
+        </div>
 
-        <h3>Web Development</h3>
-        <ul>
+        <h3 class="collapsible">Web Development </h3>
+        <div class="content">
+        <ul class="section-ul">
             <li>
                 <div class="clearfix">
                     <span class="title">Interactive Personal Webpage :</span> Personal Project
@@ -171,6 +175,8 @@
                 </ul>
             </li>
         </ul>
+        </div>
     </div>
+    <script src="project.js" defer></script>
 </body>
 </html>
